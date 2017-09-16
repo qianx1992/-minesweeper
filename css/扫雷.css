@@ -1,0 +1,236 @@
+p,h3,body{
+	margin: 0;
+}
+em{
+	font-style: normal;
+}
+html{
+	height: 100%;
+}
+body{
+	height: 100%;
+	display: flex;
+}
+.wrap{
+	width: 396px;
+	height: 443px;
+	margin: auto;
+	box-sizing: border-box;
+	border: 1px solid #000000;
+	background-color: #e6dbe7;
+	box-shadow: 0 0 12px #8c8c8c;
+	border-radius: 7px;
+}
+.head{
+	font: 12px/28px "微软雅黑";
+}
+.head:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.hleft{
+	float: left;
+}
+.hleft em{
+	float: left;
+	width: 16px;
+	height: 15px;
+	background: url(../img/扫雷/logo.png) no-repeat 0 0;
+	margin: 6px 5px 6px 7px;
+}
+.hright{
+	float: right;
+	margin-right: 6px;
+}
+.hright span{
+	float: left;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	height: 18px;
+}
+.hright span:first-of-type{
+	width: 27px;
+	background-image: url(../img/扫雷/hricon1.png);
+	border: 1px solid #595259;
+	border-top: none;
+}
+.hright span:nth-of-type(2){
+	width: 26px;
+	background-image: url(../img/扫雷/hricon2.png);
+	border-bottom: 1px solid #595259;
+}
+.hright span:nth-of-type(3){
+	width: 46px;
+	background-image: url(../img/扫雷/hricon3.png);
+	border: 1px solid #532b22;
+	border-top: none;
+}
+.main{
+	border: 1px solid #000000;
+	margin: 0 6px;
+}
+.main > p{
+	padding-left: 7px;
+	height: 20px;
+	background: url(../img/扫雷/pbg.png) repeat 0 0;
+	font: 12px/20px "微软雅黑";
+}
+p span{
+	float: left;
+	margin-right: 14px;
+}
+.box{
+	height: 385px;
+	background: url(../img/扫雷/boxbg.png) repeat 0 0;
+	display: flex;
+	position: relative;
+}
+#con{
+	width: 272px;
+	height: 272px;
+	margin:auto;
+	border: 1px solid #000;
+	box-sizing: border-box;
+	font: 22px/28px arial;
+	font-weight: bold;
+	color: #4050be;
+	text-align: center;
+}
+#con span{
+	display: inline-block;
+	vertical-align: top;
+	width: 28px;
+	height: 28px;
+	border: 2px solid #000000;
+	background-color: #c8d4e7;
+	margin: 0 -2px -2px 0;
+}
+#con .cLei{
+	background:#c8d4e7 url(../img/扫雷/logo.png) no-repeat center center;
+	background-size: 28px 28px;
+}
+#maskBox{
+	position: absolute;
+	top: 56px;
+	left: 54px;
+	width: 270px;
+	height: 270px;
+	border: 1px solid #000;
+}
+#maskBox em{
+	display: inline-block;
+	vertical-align: top;
+	width: 28px;
+	height: 28px;
+	border: 2px solid #000000;
+	margin: 0 -2px -2px 0;
+	background: url(../img/扫雷/mask.png) no-repeat 0 0;
+}
+#failBox{
+	position: absolute;
+	top: 27px;
+	left: -43px;
+	width: 481px;
+	height: 287px;
+	border: 1px solid #000;
+	box-shadow: 0 0 10px #827f76;
+	background-color: #e6dbe7;
+	border-radius: 6px;
+	display: none;
+}
+.fhead{
+	font:12px/28px "微软雅黑";
+	padding-left: 8px;
+}
+.fhead:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.fhead span{
+	float: left;
+}
+.fhead #fbClose{
+	float: right;
+	width: 46px;
+	background: url(../img/扫雷/hricon3.png) no-repeat 0 0;
+	height: 18px;
+	border: 1px solid #532b22;
+	border-top: none;
+}
+.fbCon{
+	width: 447px;
+	height: 251px;
+	background-color: #f0f0f0;
+	margin: 0 auto;
+	padding-left: 20px;
+}
+#fbTitle{
+	font: 16px/62px "微软雅黑";
+	text-align: center;
+}
+.fbCon p{
+	font: 12px/36px "微软雅黑";
+}
+.fbCon p:after{
+	content: "";
+	clear: both;
+	display: block;
+}
+.fbCon p span{
+	float: left;
+	margin-right: 40px;
+}
+#playAgain{
+	display: block;
+	margin: 44px auto 0;
+	width: 143px;
+	height: 26px;
+	border: 1px solid #3c7fb1;
+	background-color: #ebf3f8;
+	border-radius: 4px;
+}
+.foot{
+	position: absolute;
+	left: 0;
+	bottom: 10px;
+	width: 304px;
+	padding: 0 40px 0 36px;
+	z-index: 99;
+	font: 22px/22px arial;
+	color: #fff;
+	text-align: center;
+}
+.fleft{
+	float: left;
+}
+.ficon{
+	float: left;
+	width: 40px;
+	height: 40px;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	border-radius: 50%;
+}
+.fleft .ficon{
+	margin-right: 17px;
+	background-image: url(../img/扫雷/ficon1.png);
+}
+.fNum{
+	float: left;
+	width: 60px;
+	height: 30px;
+	background-color: #3967b0;
+	border-radius: 5px;
+	margin-top: 9px;
+	color: #fff;
+	box-shadow: 0 0 4px #d0d4e6;
+}
+.fright{
+	float: right;
+}
+.fright .ficon{
+	margin-left: 11px;
+	background-image: url(../img/扫雷/ficon2.png);
+}
