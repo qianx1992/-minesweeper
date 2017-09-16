@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>JS扫雷游戏</title>
+		<link rel="stylesheet" type="text/css" href="css/minesweeper.css" />
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="head">
+				<div class="hleft">
+					<em></em><span>扫雷</span>
+				</div>
+				<div class="hright">
+					<span></span><span></span><span id="close"></span>
+				</div>
+			</div>
+			<div class="main">
+				<p><span>游戏(G)</span><span>帮助(H)</span></p>
+				<div class="box">
+					<div id="con"></div>
+					<div id="maskBox"></div>
+					<div id="failBox">
+						<div class="fhead">
+							<span>游戏失败</span>
+							<span id="fbClose"></span>
+						</div>
+						<div class="fbCon">
+							<h3 id="fbTitle"></h3>
+							<p id="gtime"></p>
+							<p><span id="bestTime"></span><span id="gDate"></span></p>
+							<p><span id="total"></span><span id="winSum"></span></p>
+							<input type="button" id="playAgain" value="再玩一局" />
+						</div>
+					</div>
+					<div class="foot">
+						<div class="fleft">
+							<span class="ficon"></span><span class="fNum" id="ftime">0</span>
+						</div>
+						<div class="fright">
+							<span class="fNum">10</span><span  class="ficon"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/minesweeper.js"></script>
+	</body>
+
+</html>
